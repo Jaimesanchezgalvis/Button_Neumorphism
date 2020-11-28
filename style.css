@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    --primary-color: #F0F0F3;
+    --light-color: #FFFFFF;
+    --dark-color: rgba(174, 174, 192, 0.4);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background: var(--primary-color);
+}
+
+.button {
+    margin: auto;
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 98px;
+    border: transparent solid 4px;
+    font-size: 18px;
+    background: var(--primary-color);
+    color: #808B9F;
+    box-shadow: -10px -10px 30px var(--light-color), 10px 10px 30px var(--dark-color);
+}
+
+.button:active {
+    border: var(--primary-color) solid 4px;
+    box-shadow: -20px -20px 60px var(--light-color),
+        20px 20px 60px var(--dark-color),
+        inset -3px -3px 10px var(--light-color),
+        inset 3px 3px 10px var(--dark-color);
+    zoom: 1.1;
+
+
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover{
+    border: var(--primary-color) solid 4px;
+    box-shadow: -10px -10px 30px var(--light-color),
+    10px 10px 30px var(--dark-color),
+    inset -3px -3px 10px var(--light-color),
+    inset 3px 3px 10px var(--dark-color);
+}
